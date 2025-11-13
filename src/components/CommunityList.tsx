@@ -59,7 +59,7 @@ const CommunityList = () => {
                     to={`/communities/${community.id}`}
                     className="group"
                 >
-                    <div className="bg-gradient-to-br from-slate-900 to-slate-800 border border-cyan-900/30 rounded-lg p-6 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 h-full flex flex-col">
+                    <div className="bg-linear-to-br from-slate-900 to-slate-800 border border-cyan-900/30 rounded-lg p-6 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 h-full flex flex-col">
                         {/* Header */}
                         <div className="flex items-start justify-between mb-4">
                             <div className="flex-1">
@@ -74,7 +74,7 @@ const CommunityList = () => {
                                     })}
                                 </p>
                             </div>
-                            <div className="flex-shrink-0">
+                            <div className="shrink-0">
                                 <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center group-hover:bg-cyan-500/20 transition">
                                     <Users className="w-5 h-5 text-cyan-400" />
                                 </div>
@@ -82,7 +82,7 @@ const CommunityList = () => {
                         </div>
 
                         {/* Description */}
-                        <p className="text-gray-300 text-sm mb-6 flex-grow font-mono line-clamp-3">
+                        <p className="text-gray-300 text-sm mb-6 grow font-mono line-clamp-3">
                             {community.description}
                         </p>
 

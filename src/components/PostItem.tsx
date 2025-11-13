@@ -16,13 +16,13 @@ const PostItem = ({ post }: Props) => {
             <div className="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 w-full max-w-sm backdrop-blur-sm">
                 {/* Image */}
                 {post.image_url && (
-                    <div className="w-full aspect-square bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden relative group">
+                    <div className="w-full aspect-square bg-linear-to-br from-slate-800 to-slate-900 overflow-hidden relative group">
                         <img 
                             src={post.image_url} 
                             alt={post.title} 
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                 )}
 
@@ -34,10 +34,10 @@ const PostItem = ({ post }: Props) => {
                             <img 
                                 src={post.avatar_url} 
                                 alt="User avatar"
-                                className="w-9 h-9 rounded-full ring-1 ring-slate-700 object-cover flex-shrink-0"
+                                className="w-9 h-9 rounded-full ring-1 ring-slate-700 object-cover shrink-0"
                             />
                         ) : (
-                            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex-shrink-0"></div>
+                            <div className="w-9 h-9 rounded-full bg-linear-to-br from-cyan-400 to-blue-500 shrink-0"></div>
                         )}
                         <div className="flex-1 min-w-0">
                             <h3 className="text-sm font-semibold text-white truncate">

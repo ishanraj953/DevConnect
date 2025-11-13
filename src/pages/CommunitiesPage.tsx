@@ -6,7 +6,7 @@ export const CommunitiesPage = () => {
   return (
     <div className="min-h-screen bg-slate-950">
       {/* Hero Section (Max width remains 7xl for full-bleed background) */}
-      <div className="bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 border-b border-cyan-900/30 pt-20 pb-12">
+      <div className="bg-linear-to-b from-slate-900 via-slate-950 to-slate-950 border-b border-cyan-900/30 pt-20 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column: Title and CTA */}
@@ -30,7 +30,7 @@ export const CommunitiesPage = () => {
             
             {/* Right Column: Code Block Graphic */}
             <div className="hidden md:block">
-              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-900/30 rounded-lg p-8 font-mono text-sm text-gray-300">
+              <div className="bg-linear-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-900/30 rounded-lg p-8 font-mono text-sm text-gray-300">
                 <div className="text-green-400">// Explore the communities</div>
                 <div className="text-cyan-400 mt-2">const communities <span className="text-emerald-400">=</span> <span className="text-emerald-400">{'['}</span></div>
                 <div className="ml-4 text-gray-400 mt-1">

@@ -137,10 +137,10 @@ const CommentSection = ({ postId }: CommentSectionProps) => {
                 <img 
                   src={user.user_metadata.avatar_url}
                   alt="Your avatar"
-                  className="w-10 h-10 rounded-full ring-2 ring-cyan-400/50 flex-shrink-0 object-cover"
+                  className="w-10 h-10 rounded-full ring-2 ring-cyan-400/50 shrink-0 object-cover"
                 />
               ) : (
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex-shrink-0"></div>
+                <div className="w-10 h-10 rounded-full bg-linear-to-br from-cyan-500 to-blue-600 shrink-0"></div>
               )}
               <div className="flex-1">
                 <textarea
