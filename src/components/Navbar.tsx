@@ -10,6 +10,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { signOut, user } = useAuth();
     const { theme, toggleTheme } = useTheme();
+    const { signInWithGithub, signOut, user, isLoading } = useAuth();
 
     const displayName = user?.user_metadata?.full_name || user?.user_metadata?.user_name || user?.email;
     
