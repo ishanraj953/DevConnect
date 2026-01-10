@@ -66,6 +66,18 @@ html.light .bg-slate-900 {
   border: 1px solid #cbd5e1 !important;
 }
 
+html.light .bg-slate-800 {
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+}
+
+html.light .bg-slate-900\/50 {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+
 html.light .from-slate-900 {
   background: linear-gradient(to bottom, #ffffff, #f8fafc) !important;
 }
@@ -82,6 +94,11 @@ html.light .bg-gradient-to-b {
   background: linear-gradient(to bottom, #ffffff, #f8fafc) !important;
   border-bottom: 2px solid #cbd5e1 !important;
 }
+
+html.light .bg-linear-to-br {
+  background: #ffffff !important;
+}
+
 
 /* Hero section titles */
 html.light .text-6xl {
@@ -116,8 +133,8 @@ html.light .text-slate-300 {
 }
 
 html.light .text-slate-400 {
-  color: #374151 !important;
-  font-weight: 600;
+  color: #475569 !important;
+  font-weight: 500;
 }
 
 html.light .text-cyan-300 {
@@ -135,6 +152,47 @@ html.light .text-red-300 {
   font-weight: 600;
 }
 
+html.light .text-red-400 {
+  color: #ef4444 !important;
+  font-weight: 600;
+}
+
+/* Gray text colors - improved contrast */
+html.light .text-gray-200 {
+  color: #1f2937 !important;
+  font-weight: 600;
+}
+
+html.light .text-gray-300 {
+  color: #374151 !important;
+  font-weight: 500;
+}
+
+html.light .text-gray-400 {
+  color: #4b5563 !important;
+  font-weight: 500;
+}
+
+html.light .text-gray-500 {
+  color: #6b7280 !important;
+  font-weight: 500;
+}
+
+html.light .text-gray-600 {
+  color: #4b5563 !important;
+  font-weight: 500;
+}
+
+html.light .text-gray-700 {
+  color: #374151 !important;
+  font-weight: 600;
+}
+
+html.light .text-gray-900 {
+  color: #111827 !important;
+  font-weight: 600;
+}
+
 /* DevConnect logo and main titles */
 html.light .font-mono {
   color: #000000 !important;
@@ -142,7 +200,9 @@ html.light .font-mono {
 }
 
 /* Specific section improvements */
-html.light h1, html.light h2, html.light h3 {
+html.light h1,
+html.light h2,
+html.light h3 {
   color: #000000 !important;
   font-weight: 800 !important;
 }
@@ -164,7 +224,9 @@ html.light .text-xl {
 }
 
 /* Large text elements */
-html.light .text-3xl, html.light .text-4xl, html.light .text-5xl {
+html.light .text-3xl,
+html.light .text-4xl,
+html.light .text-5xl {
   color: #000000 !important;
   font-weight: 800 !important;
 }
@@ -179,8 +241,9 @@ html.light .border-slate-700 {
 }
 
 html.light .border-slate-800 {
-  border-color: #94a3b8 !important;
+  border-color: #e2e8f0 !important;
 }
+
 
 html.light .border-cyan-900\/30 {
   border-color: rgba(8, 145, 178, 0.3) !important;
