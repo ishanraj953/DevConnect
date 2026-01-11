@@ -5,11 +5,24 @@ import { useAuth } from '../hooks/useAuth';
 import { useTheme } from '../hooks/useTheme';
 import { Code2, Menu, X, MessageSquare, Calendar, Sun, Moon } from 'lucide-react';
 import MessageNotificationBadge from './MessageNotificationBadge';
+import { showSuccess, showError } from "../utils/toast";
+
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { theme, toggleTheme } = useTheme();
     const { signOut, user } = useAuth();
+
+    const handleSignOut=async()=>{
+      try{
+        await signOut();
+        showSuccess("Logged out successfully");
+
+      }
+      catch{
+        showError("Failed to log out");
+      }
+    }
 
     const displayName = user?.user_metadata?.full_name || user?.user_metadata?.user_name || user?.email;
     
@@ -69,7 +82,7 @@ const Navbar = () => {
                             {displayName}
                         </Link>
                         <button 
-                            onClick={signOut} 
+                            onClick={handleSignOut} 
                             className="px-4 py-2 bg-red-900/20 hover:bg-red-900/40 border border-red-500/50 rounded-lg text-red-300 font-mono text-sm transition"
                         >
                             logout
@@ -162,7 +175,7 @@ const Navbar = () => {
                     {displayName}
                   </Link>
                   <button 
-                    onClick={signOut} 
+                    onClick={handleSignOut} 
                     className="w-full px-4 py-2 bg-red-900/20 hover:bg-red-900/40 border border-red-500/50 rounded-lg text-red-300 font-mono text-sm transition"
                   >
                     logout
